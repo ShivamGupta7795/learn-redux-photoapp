@@ -18,7 +18,8 @@ class AddPhoto extends Component{
 			imageLink: link
 		};
 
-		this.props.onAddPhoto(postPhoto);
+		this.props.addPost(postPhoto);
+		this.props.onHistory.push("/");
 	}	
 
 

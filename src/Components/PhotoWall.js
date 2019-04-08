@@ -10,7 +10,7 @@ const PhotoWall = (props) => {
 			<div className = "photoGrid">
 				{props.posts.map(
 					(post, index) => 
-						<Photo post={post} key={index} onPostRemove={props.onPostRemove} />)}
+						<Photo post={post} key={index}  {...props} index = {index}/>)}
 			</div>
 		</div>
 		);
